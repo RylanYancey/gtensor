@@ -1,0 +1,6 @@
+/.vscode
+/target
+Cargo.lock
+/examples/*.bmp                
+/examples/*.tape
+/examples/data/*
