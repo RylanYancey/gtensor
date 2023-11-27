@@ -1,7 +1,15 @@
 [package]
 name = "gtensor"
-version = "0.1.0"
+version = "1.0.0"
 edition = "2021"
+authors = ["Rylan Yancey"]
+description = "Reverse-mode autodifferentiation of computational graphs with tensors and more for machine learning."
+documentation = "https://github.com/RylanYancey/gtensor/tree/main/docs"
+readme = "README.md"
+repository = "https://github.com/RylanYancey/gtensor/tree/main"
+license = "MIT or Apache"
+keywords = ["ml", "autodiff", "machine-learning", "statistics", "math"]
+categories = ["algorithms", "mathematics", "visualization"]
 
 [profile.release]
 debug = true
