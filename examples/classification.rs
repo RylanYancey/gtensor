@@ -36,13 +36,12 @@ fn main() {
                 // get the prediction from the network.
                 let prediction = tape.forward(feature);
 
-                // use BMLS to calculate the loss.
-                // currently, GTensor does not
-                // provide loss functions directly.
-                // im still figuring out how to do this elegently.
-                bmls::mse(
-                    &label.data, &prediction.data, error.slice_inner_mut(), grad.slice_inner_mut(), [N,1]
-                ).unwrap();
+                gt::math::loss::mse(
+                    label,
+                    prediction.slice(),
+                    &mut error,
+                    &mut grad,
+                );
             }
 
             // add the loss for each batch to the total loss
@@ -62,9 +61,12 @@ fn main() {
     for (feature, label) in test.iter_batched(N) {
         let prediction = tape.forward(feature);
 
-        bmls::mse(
-            &label.data, &prediction.data, error.slice_inner_mut(), grad.slice_inner_mut(), [N,1]
-        ).unwrap();
+        gt::math::loss::mse(
+            label,
+            prediction.slice(),
+            &mut error,
+            &mut grad,
+        );
 
         // add the loss for each batch to the total loss
         error.iter().for_each(|x| loss += *x);
@@ -203,7 +205,7 @@ pub fn draw_prediction(tape: &mut gt::Tape, dataset: &gt::Dataset, name: &str) {
 
             // the color indicated by the prediction.
             let color = 
-            if prediction.data[0] < 0.5 {
+            if prediction[0] < 0.5 {
                 bmp::Pixel::new(60, 165, 255)
             } else {
                 bmp::Pixel::new(255, 165, 0)

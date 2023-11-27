@@ -9,6 +9,6 @@ pub mod math;
 use shape::Shape;
 
 pub struct Tensor {
-    data: Vec<f32>,
-    shape: Shape,
+    pub(crate) data: Vec<f32>,
+    pub(crate) shape: Shape,
 }

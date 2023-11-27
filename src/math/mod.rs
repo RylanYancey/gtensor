@@ -1,2 +1,2 @@
 
-mod loss;
+pub mod loss;

@@ -13,7 +13,7 @@ use crate::operators::Operator;
 use crate::initializers;
 use crate::optimizers;
 use crate::tensor::slice::TensorSlice;
-use super::gtensor::TensorGuard;
+use crate::tensor::Tensor;
 
 /// The Main Datatype of gTensor. 
 /// The Tape is a Computation Graph on which
@@ -49,7 +49,7 @@ impl Tape {
         }
     }
 
-    pub fn forward(&mut self, input: TensorSlice) -> TensorGuard {
+    pub fn forward(&mut self, input: TensorSlice) -> Tensor {
         let first = &self.nodes.first().unwrap().y;
 
         // ensure compatability between the input data and the input node.
@@ -71,7 +71,7 @@ impl Tape {
         }
 
         // return the output of the last node.
-        self.nodes.last().unwrap().y.slice()
+        self.nodes.last().unwrap().y.to_tensor()
     }
 
     pub fn backward(&mut self, gradient: TensorSlice) {

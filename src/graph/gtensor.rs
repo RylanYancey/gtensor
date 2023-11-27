@@ -3,6 +3,7 @@ use std::sync::Arc;
 use std::sync::RwLock;
 
 use crate::tensor::shape::Shape;
+use crate::tensor::Tensor;
 use super::arena::ArenaIndex;
 
 pub type Write<'a, T> = std::sync::RwLockWriteGuard<'a, T>;
@@ -89,6 +90,13 @@ impl GTensor {
 
     pub fn shape4(&self) -> [usize; 4] {
         [self.shape[0], self.shape[1], self.shape[2], self.shape[3]]
+    }
+
+    pub fn to_tensor(&self) -> Tensor {
+        Tensor {
+            data: self.read().clone(),
+            shape: self.shape,
+        }
     }
 
     pub fn slice(&self) -> TensorGuard {
