@@ -40,7 +40,7 @@ impl Display for Matmul {
 }
 ```
 
-The `forward` function provided by the `Operator` trait is executed during the forward pass of the neural network. The next step is to collect input and output tensors from the `Node`. We will also remove the `reshape` function since it is not needed for the Matmul op. We can collect using the functions `node.x` and `node.y`.
+The `forward` function provided by the `Operator` trait is executed during the forward pass of the neural network. The next step is to collect input and output tensors from the `Node`. We will also remove the `reshape` function since it is not needed for the Matmul op. We can collect node variables using the functions `node.x` and `node.y`.
 
 ```rs
 impl Operator for Matmul {
