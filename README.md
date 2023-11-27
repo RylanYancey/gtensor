@@ -23,7 +23,7 @@ gTensor is in active, early development. Expect frequent, breaking changes. If y
 
 gT provides the `Tape` type, which can be used to record operators to the computational graph. The Example below constructs a computational graph with 2 hidden layers, each with 4 neurons, with the tanh activation function.
 
-```rs
+```
 /// Record Operators to the Tape.
 fn build_tape() -> gt::Tape {
     let mut tape = gt::Tape::builder();
