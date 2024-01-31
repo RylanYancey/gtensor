@@ -1,0 +1,34 @@
+\contentsline {chapter}{\numberline {1}Introduction to BMLS}{2}{chapter.1}%
+\contentsline {paragraph}{Data Formats}{2}{section*.2}%
+\contentsline {paragraph}{Design Patterns}{2}{section*.3}%
+\contentsline {paragraph}{Features}{2}{section*.4}%
+\contentsline {section}{\numberline {1.1}Contributors}{2}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Peer Reviewers}{3}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Element-Wise Operators}{4}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Add}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Sub}{4}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Mul}{5}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Div}{5}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Axis Add}{6}{section.2.5}%
+\contentsline {paragraph}{Gradient}{6}{section*.5}%
+\contentsline {section}{\numberline {2.6}Axis Sub}{6}{section.2.6}%
+\contentsline {paragraph}{Gradient}{7}{section*.6}%
+\contentsline {section}{\numberline {2.7}Axis Mul}{7}{section.2.7}%
+\contentsline {paragraph}{Gradient w.r.t. B}{7}{section*.7}%
+\contentsline {paragraph}{Gradient w.r.t. A}{7}{section*.8}%
+\contentsline {section}{\numberline {2.8}Axis Div}{8}{section.2.8}%
+\contentsline {paragraph}{Gradient w.r.t. B}{8}{section*.9}%
+\contentsline {paragraph}{Gradient w.r.t. A}{8}{section*.10}%
+\contentsline {section}{\numberline {2.9}Dropout}{8}{section.2.9}%
+\contentsline {paragraph}{Gradient w.r.t. A}{9}{section*.11}%
+\contentsline {chapter}{\numberline {3}Activation Operators}{10}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Sigmoid}{10}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Softmax}{10}{section.3.2}%
+\contentsline {chapter}{\numberline {4}Higher Rank Operators}{12}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Matmul}{12}{section.4.1}%
+\contentsline {section}{\numberline {4.2}LRN}{14}{section.4.2}%
+\contentsline {chapter}{\numberline {5}Loss Functions}{15}{chapter.5}%
+\contentsline {section}{\numberline {5.1}MSE}{15}{section.5.1}%
+\contentsline {paragraph}{Gradient}{15}{section*.12}%
+\contentsline {section}{\numberline {5.2}MAE}{15}{section.5.2}%
+\contentsline {paragraph}{Gradient}{16}{section*.13}%

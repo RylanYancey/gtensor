@@ -1,0 +1,15 @@
+[0] Config.pm:307> INFO - This is Biber 2.17
+[0] Config.pm:310> INFO - Logfile is 'bmls.blg'
+[55] biber:340> INFO - === Wed Jan 31, 2024, 15:45:32
+[68] Biber.pm:418> INFO - Reading 'bmls.bcf'
+[107] Biber.pm:972> INFO - Found 2 citekeys in bib section 0
+[114] Biber.pm:4383> INFO - Processing section 0
+[122] Biber.pm:4574> INFO - Looking for bibtex file 'docs.bib' for section 0
+[122] bibtex.pm:1713> INFO - LaTeX decoding ...
+[125] bibtex.pm:1518> INFO - Found BibTeX data source 'docs.bib'
+[154] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[154] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[154] Biber.pm:4203> INFO - Sorting list 'anyt/global//global/global' of type 'entry' with template 'anyt' and locale 'en-US'
+[154] Biber.pm:4209> INFO - No sort tailoring available for locale 'en-US'
+[156] bbl.pm:654> INFO - Writing 'bmls.bbl' with encoding 'UTF-8'
+[156] bbl.pm:757> INFO - Output to bmls.bbl

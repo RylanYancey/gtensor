@@ -3,6 +3,7 @@ pub mod cu;
 pub mod device;
 pub mod kernel;
 pub mod stream;
+pub mod modules;
 mod default;
 
 pub use default::get_default_device;

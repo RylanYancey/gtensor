@@ -4,9 +4,13 @@ version = "0.1.0"
 edition = "2021"
 
 [features]
-default = []
-f16 = []
-bf16 = []
+default = ["f16"]
+gpu = []
+f16 = ["gpu"]
+bf16 = ["gpu"]
+
+[profile.dev]
+features = ["gpu"]
 
 [dependencies]
 anyhow = "1.0.79"
@@ -24,3 +28,4 @@ features = ["num-traits"]
 
 [build-dependencies]
 bindgen = "0.69.2"
+cc = "1.0.83"
