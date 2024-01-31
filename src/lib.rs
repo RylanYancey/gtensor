@@ -1,7 +1,6 @@
 
 mod gpu;
 mod util;
-mod error;
 mod storage;
 mod nn;
 
